@@ -4,6 +4,7 @@
   "description": "A telegram bot to download musics from youtube",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "dev": "nodemon index.js"
   },
   "repository": {
