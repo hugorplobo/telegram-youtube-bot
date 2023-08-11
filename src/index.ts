@@ -7,6 +7,12 @@ const bot = new Bot(process.env.TOKEN!);
 let currentDownloads = new Array<number>();
 
 async function handleMessage(ctx: Context) {
+  if (["/start", "/help"].includes(ctx.message!.text!)) {
+    return await ctx.reply("Send me a YouTube video URL to download as a MP3!");
+  }
+  
+  console.log(`Received message: ${ctx.message?.text}`);
+
   if (currentDownloads.includes(ctx.from!.id)) {
     await ctx.reply("Hey calm down, only one download at a time!")
   } else {
