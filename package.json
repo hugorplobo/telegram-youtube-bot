@@ -15,7 +15,7 @@
     "dotenv": "^16.3.1",
     "grammy": "^1.17.2",
     "typescript": "^5.1.6",
-    "ytdl-core": "^4.11.5"
+    "ytdl-core": "^4.10.0"
   },
   "devDependencies": {
     "@types/node": "^20.4.9",
